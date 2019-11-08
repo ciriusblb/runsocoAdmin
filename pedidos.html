@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Platos</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="main_button.css">
+    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="paginacion.css">
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <div>
+                <span id="btn__header_menu" ><i class="fas fa-bars"></i></span>
+            </div>
+            <img src="img/logo-menu/horcon.png" alt="">
+            <strong>Pizzería & Restaurant EL HORCÓN</strong>
+        </div>
+        <div class="header_right">
+            <div>
+                <span><i class="fas fa-user"></i></span>
+            </div>
+            <span>
+                J.r. Junior Tenorio Dominguez
+            </span>
+        </div>
+    </header>
+    <main>
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <li><a href=""><div><img src="img/logo-menu/house.png" alt=""></div><span>Bienvenido</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/breakfast.png" alt=""></div><span>Platillos</span></a></li>
+                <li class="sidebar__active"><a href=""><div><img src="img/logo-menu/checklist.png" alt=""></div><span>Pedidos</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/analysis.png" alt=""></div><span>Estadística</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/report.png" alt=""></div><span>Reportes</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/store.png" alt=""></div><span>Restaurant</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/logout.png" alt=""></div><span>Salir</span></a></li>
+            </ul>
+        </aside>
+        <section class="pedidos">
+            <div class="pdds__left">
+                <div class="pdds__herramientas">
+                    <div class="crud">
+                        <button class="main_button nuevo main__button_active"><span><i class="fas fa-eye"></i></span></button>
+                        <button class="main_button editar "><span><i class="fas fa-pencil-alt"></i></span></button>
+                        <button class="main_button eliminar "><span><i class="fas fa-trash"></i></span></button>
+                    </div>
+                    <div class="filtros">
+                        <div class="buscador">
+                            <select name="" id="">
+                                <option value="">Buscar por</option>
+                                <option value="">Nombre</option>
+                                <option value="">Tipo</option>
+                                <option value="">Duración</option>
+                            </select>
+                            <input type="text" placeholder="Ingrese platillo a buscar">
+                            <div>
+                                <span><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="checkoxs">
+                            <div>
+                                <label class="container">En espera
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="container">En proceso
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pdds__tabla tabla__scrollbar">
+                   <table class="tabla">
+                      <thead>
+                            <tr>
+                                <th>ITEM</th>
+                                <th width="350px">MENÚ</th>
+                                <th width="200px">DIRECCIÓN</th>
+                                <th>CLIENTE</th>
+                                <th>COURRIER</th>
+                                <th>ESTADO</th>
+                                <th>ACCIÓN</th>
+
+                            </tr>
+                        </thead>
+                      <tbody>
+                            <tr class="tr__active">
+                                <td>1</td>
+                                <td>
+                                    <ul>
+                                        <li>Pizza linda andahuaylina con harina y tomate</li>
+                                        <li>Pizza linda maldonada con harina y gashetitas</li>
+                                        <li>Pizza terminador grande</li>
+                                        <li>Pizza linda loretana con su aguita de coco, ya vuelta, di, estoy de sed</li>
+                                    </ul>
+                                </td>
+                                <td>Asentamiento Humano Alberto Fujimori, Mz. C, Lt. 5</td>
+                                <td>Gabriel García Marquez</td>
+                                <td>Juan Manuel Delgado Marcos</td>
+                                <td>
+                                    En proceso
+                                </td>
+                                <td>
+                                    <img src="img/logo-menu/place.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <ul>
+                                        <li>Pizza linda andahuaylina con harina y tomate</li>
+                                    </ul>
+                                </td>
+                                <td>Av. Andrés Avelino Cáceres Nro. 546</td>
+                                <td>Denis Ricardo Vilcas Villalba</td>
+                                <td><strong> Sin Courrier <img src="img/logo-menu/triangle.png" alt=""> </strong></td>
+                                <td>
+                                    En espera
+                                </td>
+                                <td>
+                                    <img src="img/logo-menu/alarm.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <ul>
+                                        <li>Pizza linda andahuaylina con harina y tomate</li>
+                                        <li>Pizza linda maldonada con harina y gashetitas</li>
+                                        <li>Pizza terminador grande</li>
+                                    </ul>
+                                </td>
+                                <td>Av. Andrés Avelino Cáceres Nro. 546</td>
+                                <td>Denis Ricardo Vilcas Villalba</td>
+                                <td><strong> Sin Courrier <img src="img/logo-menu/triangle.png" alt=""></strong></td>
+                                <td>
+                                    En espera
+                                </td>
+                                <td>
+                                    <img src="img/logo-menu/alarm.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <ul>
+                                        <li>Pizza terminador grande</li>
+                                        <li>Pizza linda loretana con su aguita de coco, ya vuelta, di, estoy de sed</li>
+                                    </ul>
+                                </td>
+                                <td>Asentamiento Humano Alberto Fujimori, Mz. C, Lt. 5</td>
+                                <td>Gabriel García Marquez</td>
+                                <td>Juan Manuel Delgado Marcos</td>
+                                <td>
+                                    En proceso
+                                </td>
+                                <td>
+                                    <img src="img/logo-menu/place.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <ul>
+                                        <li>Pizza terminador grande</li>
+                                    </ul>
+                                </td>
+                                <td>Asentamiento Humano Alberto Fujimori, Mz. C, Lt. 5</td>
+                                <td>Gabriel García Marquez</td>
+                                <td>Juan Manuel Delgado Marcos</td>
+                                <td>
+                                    En proceso
+                                </td>
+                                <td>
+                                    <img src="img/logo-menu/place.png" alt="">
+                                </td>
+                            </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="pdds__paginacion">
+                    <div class="pagination">
+                        <a href="#"><span><i class="fas fa-caret-left"></i></span><span><i class="fas fa-caret-left"></i></span></a>
+                        <a href="#"><span><i class="fas fa-caret-left"></i></span></a>
+                        <a href="#" class="pag__active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#"><span><i class="fas fa-caret-right"></i></span></a>
+                        <a href="#"><span><i class="fas fa-caret-right"></i></span><span><i class="fas fa-caret-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pdds__right">
+                
+            </div>
+        </section>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+

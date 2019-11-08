@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Platos</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <div>
+                <span id="btn__header_menu" ><i class="fas fa-bars"></i></span>
+            </div>
+            <img src="img/logo-menu/horcon.png" alt="">
+            <strong>Pizzería & Restaurant EL HORCÓN</strong>
+        </div>
+        <div class="header_right">
+            <div>
+                <span><i class="fas fa-user"></i></span>
+            </div>
+            <span>
+                J.r. Junior Tenorio Dominguez
+            </span>
+        </div>
+    </header>
+    <main>
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <li><a href=""><div><img src="img/logo-menu/house.png" alt=""></div><span>Bienvenido</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/breakfast.png" alt=""></div><span>Platillos</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/checklist.png" alt=""></div><span>Pedidos</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/analysis.png" alt=""></div><span>Estadística</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/report.png" alt=""></div><span>Reportes</span></a></li>
+                <li class="sidebar__active"><a href=""><div><img src="img/logo-menu/store.png" alt=""></div><span>Restaurant</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/logout.png" alt=""></div><span>Salir</span></a></li>
+            </ul>
+        </aside>
+        <section class="restaurant">
+            <div class="rst__left">
+                <div>
+                    <div><h4>Datos del Restaurant</h4></div>
+                </div>
+                <div class="rst__datos  scrollbar">
+                    <div class="formulario">
+                        <form action="">
+                            <div class="formulario__section">
+                                <div class="form__50">
+                                    <div class="formulario__img">
+                                        <div class="form__noImg">
+                                            <label for="nopic">
+                                                <div>
+                                                    <span><i class="fas fa-camera"></i></span>
+                                                </div>
+                                                <input id="nopic" type="file" >
+                                            </label>
+                                        </div> 
+                                        <div class="form__siImg">
+                                            <label for="sipic">
+                                                <img src="img/perfil/face10.png" alt="">
+                                                <input id="sipic" type="file" >
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__50">
+                                    <div class="formulario__input">
+                                        <span>RUC</span>
+                                        <div>
+                                            <input type="text" placeholder="20602370489">
+                                        </div>
+                                    </div>
+                                    <div class="formulario__textarea">
+                                        <span>Razón Social</span>
+                                        <div>
+                                            <textarea name="" id="" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="formulario__textarea">
+                                        <span>Nombre Comercial</span>
+                                        <div>
+                                            <textarea name="" id="" placeholder="Pizzería & Restaurant EL HORCÓN" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="formulario__input">
+                                        <span>Teléfono</span>
+                                        <div>
+                                            <input type="text" placeholder="955719894">
+                                        </div>
+                                    </div>
+                                    <div class="formulario__input">
+                                        <span>Dirección</span>
+                                        <div>
+                                            <input type="text" placeholder="Avenida Leon Velarde, 361">
+                                        </div>
+                                    </div>
+                                    <div class="formulario__input">
+                                        <span>Horario de atención</span>
+                                        <div>
+                                            <input type="text" placeholder="Lunes a Domingo 9am - 4pm">
+                                        </div>
+                                    </div>
+                                    <div class="formulario__input">
+                                        <span>Correo Electrónico</span>
+                                        <div>
+                                            <input type="text" placeholder="pizzeriaelhorcon@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="formulario__botones">
+                                        <div class="boton__send">
+                                            <button type="submit">Guardar</button>
+                                        </div>
+                                        <div class="boton__cancel">
+                                            <button type="submit">Cancelar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+            <div class="rst__right">
+                
+            </div>
+        </section>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+

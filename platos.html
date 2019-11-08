@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Platos</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="main_button.css">
+    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="paginacion.css">
+    <link rel="stylesheet" href="platos.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <div>
+                <span id="btn__header_menu" ><i class="fas fa-bars"></i></span>
+            </div>
+            <img src="img/logo-menu/horcon.png" alt="">
+            <strong>Pizzería & Restaurant EL HORCÓN</strong>
+        </div>
+        <div class="header_right">
+            <div>
+                <span><i class="fas fa-user"></i></span>
+            </div>
+            <span>
+                J.r. Junior Tenorio Dominguez
+            </span>
+        </div>
+    </header>
+    <main>
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <li><a href=""><div><img src="img/logo-menu/house.png" alt=""></div><span>Bienvenido</span></a></li>
+                <li class="sidebar__active"><a href=""><div><img src="img/logo-menu/breakfast.png" alt=""></div><span>Platillos</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/checklist.png" alt=""></div><span>Pedidos</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/analysis.png" alt=""></div><span>Estadística</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/report.png" alt=""></div><span>Reportes</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/store.png" alt=""></div><span>Restaurant</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/logout.png" alt=""></div><span>Salir</span></a></li>
+            </ul>
+        </aside>
+        <section class="platos">
+            <div class="plts__left">
+                <div class="plts__herramientas">
+                    <div class="crud">
+                        <button class="main_button nuevo main__button_active"><span><i class="fas fa-plus"></i></span></button>
+                        <button class="main_button editar "><span><i class="fas fa-pencil-alt"></i></span></button>
+                        <button class="main_button eliminar "><span><i class="fas fa-trash"></i></span></button>
+                    </div>
+                    <div class="filtros">
+                        <div class="buscador">
+                            <select name="" id="">
+                                <option value="">Buscar por</option>
+                                <option value="">Nombre</option>
+                                <option value="">Tipo</option>
+                                <option value="">Duración</option>
+                            </select>
+                            <input type="text" placeholder="Ingrese platillo a buscar">
+                            <div>
+                                <span><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="checkoxs">
+                            <div>
+                                <label class="container">Combos
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plts__tabla tabla__scrollbar">
+                   <table class="tabla">
+                      <thead>
+                            <tr>
+                                <th>ITEM</th>
+                                <th>NOMBRE</th>
+                                <th>PRECIO</th>
+                                <th>TIPO</th>
+                                <th>DURACIÓN</th>
+                                <th>CALIFICACIÓN</th>
+                            </tr>
+                        </thead>
+                      <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td width="400px">Pizza linda Andahuaylina con...</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr class="tr__active">
+                                <td>2</td>
+                                <td  width="400px">Pizza linda Andahuaylina con harina y tacacho</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td  width="400px">Pizza linda loretana con piña y papaya</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td  width="400px">Pizza terminator</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td  width="400px">Pizza linda Andahuaylina con...</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td  width="400px">Pizza linda madre de diosense con su aguita de coco, di estoy de sed, cuida tu boca</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td  width="400px">Pizza linda Andahuaylina con...</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td  width="400px">Pizza linda Andahuaylina con...</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td  width="400px">Pizza linda Andahuaylina con...</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td  width="400px">Pizza linda Andahuaylina con...</td>
+                                <td>S/. 50.00</td>
+                                <td>Tipo 1</td>
+                                <td>2 horas</td>
+                                <td>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </td>
+                            </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="plts__paginacion">
+                    <div class="pagination">
+                        <a href="#"><span><i class="fas fa-caret-left"></i></span><span><i class="fas fa-caret-left"></i></span></a>
+                        <a href="#"><span><i class="fas fa-caret-left"></i></span></a>
+                        <a href="#" class="pag__active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#"><span><i class="fas fa-caret-right"></i></span></a>
+                        <a href="#"><span><i class="fas fa-caret-right"></i></span><span><i class="fas fa-caret-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="plts__right">
+                <div class="plts__up">
+                    Datos del platillo
+                </div>
+                <div class="plts__bot scrollbar">
+                    <div class="formulario">
+                        <form action="">
+                            <div class="formulario__img">
+                                <div class="form__noImg">
+                                    <label for="nopic">
+                                        <div>
+                                            <span><i class="fas fa-camera"></i></span>
+                                        </div>
+                                        <input id="nopic" type="file" >
+                                    </label>
+                                </div> 
+                                <div class="form__siImg">
+                                    <label for="sipic">
+                                        <img src="img/perfil/face10.png" alt="">
+                                        <input id="sipic" type="file" >
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="formulario__input">
+                                <span>Nombre</span>
+                                <div>
+                                    <input type="text" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="formulario__textarea">
+                                <span>Descripción</span>
+                                <div>
+                                    <textarea name="" id="" placeholder="Descripción" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="formulario__section">
+                                <div class="formulario__input form__50">
+                                    <span>Precio</span>
+                                    <div>
+                                        <input type="text" placeholder="Precio">
+                                    </div>
+                                </div>
+                                <div class="formulario__input form__50">
+                                    <span>Duración</span>
+                                    <div>
+                                        <input type="text" placeholder="Duración">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formulario__select">
+                                <span>Tipo</span>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">Tipo</option>
+                                        <option value="">Tipo 1</option>
+                                        <option value="">Tipo 2</option>
+                                        <option value="">Tipo 3</option>
+                                        <option value="">Tipo 4</option>
+                                        <option value="">Tipo 5</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="formulario__input">
+                                <span>Calificación</span>
+                                <div>
+                                    <input type="text" placeholder="Calificación">
+                                </div>
+                            </div>
+                            <div class="formulario__select">
+                                <span>Estado</span>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="">Estado</option>
+                                        <option value="">Habilitado</option>
+                                        <option value="">No Habilitado</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="formulario__botones">
+                                <div class="boton__send">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                                <div class="boton__cancel">
+                                    <button type="submit">Cancelar</button>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+

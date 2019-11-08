@@ -1,0 +1,146 @@
+
+:root {
+  --verde: #22B56E;
+  --gris: #707070;
+  --verdeclaro: #ECF8F5;
+}
+
+
+
+
+
+header{
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+#log__btn_menu {
+    display: none;
+}
+header label {
+    display: none;;
+    padding: 10px;
+}
+header label span {
+    font-size: 25px;
+    padding: 10px 16px 10px 10px ;
+    color: var(--gris);
+    border-right: 1px solid var(--verdeclaro);
+}
+header label span:hover {
+    cursor: pointer;
+    color: var(--verde);
+}
+header h4 {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.log__menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.log__menu li a {
+    display: block;
+    padding: 20px;
+    color: var(--gris);
+    text-decoration: none;
+}
+.log__menu li:hover {
+    cursor: pointer;
+}
+.log__menu li:hover a {
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.log__main {
+    background: linear-gradient(#22B56E, #115B37);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.log__main .log__bienvenido {
+    order: 1;
+    display: flex;
+    align-items: center;
+}
+.log__main .log__bienvenido img {
+    width: 250px;
+    height: 250px;
+}
+
+.log__main .log__bienvenido h1, .log__main .log__bienvenido h3 {
+    color: #fff;
+}
+.log__main .log__form {
+    order: 2;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.5);
+    width: 350px;
+}
+.log__main .log__form .log__form_up {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.log__main .log__form .log__form_up span {
+    font-size: 8em;
+    color: var(--verde); 
+}
+.log__main .log__form .log__form_up h2 {
+    color: var(--gris);
+    letter-spacing: 2px;
+}
+
+footer {
+    background: #fff;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--gris);
+    font-weight: bold;
+}
+
+
+
+@media (max-width:600px) {
+    header label {
+        display: block;
+    }
+    header h4 {
+        top: 15px;
+        left: 50%;
+        margin-left: -30px;
+        
+    }
+    .log__menu {
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        margin-left: -100%;
+        transition: .3s;
+    }
+    .log__menu ul {
+        flex-direction: column;
+    }
+    .log__menu ul li {
+        border-top: 1px solid var(--verdeclaro);
+    }
+    .log__menu ul li a {
+        padding: 15px 30px;;
+    }
+    #log__btn_menu:checked ~ .log__menu {
+        margin-left: 0;
+    }
+}

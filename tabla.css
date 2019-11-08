@@ -1,0 +1,76 @@
+.tabla__scrollbar::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(0,0,0,0);
+}
+.tabla__scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset rgb(0,0,0,0);
+}
+.tabla__scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--gris);
+}
+.tabla__scrollbar {
+    overflow-x: hidden;
+}
+
+
+
+
+.tabla  {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabla  thead {
+    border-bottom: 1px solid var(--azulgris);
+
+} 
+.tabla  th {
+    height: 50px;
+    font-weight: normal;
+    color: var(--gris);
+    font-size: 14px;
+    text-align:start;
+    background: var(--azulblanco);
+}
+.tabla  th:first-child {
+    text-align: center;
+}
+.tabla  tbody{
+    width: 100%;
+}
+.tabla tbody tr {
+    color: var(--gris);
+    font-size: 14px;
+    background: #fff;
+    border-bottom: 5px solid var(--azulblanco); 
+}
+.tabla tbody tr:hover {
+    background: var(--verdeclaro);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--verde);
+}
+.tabla tbody tr.tr__active {
+    background: var(--verdeclaro);
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--verde);
+}
+.tabla td:first-child {
+    text-align: center;
+}
+.tabla tbody tr td {
+    padding: 10px 0px;
+}
+.tabla tbody tr td ul {
+    list-style: none;
+}
+.tabla tbody tr td ul li::before {
+    content: ' - ';
+}
+.tabla tbody tr td img {
+    width: 30px;
+}
+.tabla tbody tr td strong img {
+    width: 20px;
+}
+

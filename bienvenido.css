@@ -1,0 +1,120 @@
+
+:root {
+  --verde: #22B56E;
+  --gris: #707070;
+  --verdeclaro: #ECF8F5;
+    --azulgris: #E5E6EB;
+    --azulblanco: #F5F6FA;
+    --rojoblanco: #EDEDED;
+    --azul: #007BFF;
+    --rojo: #DC3545;
+    --rosablanco: #FAFAFA;
+}
+main {
+    background: none;
+    display: flex;
+}
+.bienvenido {
+    width: 100%;
+    display: flex;
+    background: var(--azulblanco);
+}
+.bvd__left {
+    width: 60%;
+    height: calc(100vh - 60px);
+}
+.bvd__right {
+    width: 40%;
+    height: calc(100vh - 60px);
+}
+
+.bvd__back {
+    padding: 30px 30px 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bvd__back h5 {
+    color: var(--verde);
+    
+}
+.bvd__vistas, .bvd__restaurant {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--azulgris);
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+}
+.bvd__vistas > div, .bvd__restaurant > div {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.bvd__vistas > div > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--azulgris);
+    margin: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bvd__vistas > div > div:hover {
+    border: 1px solid var(--verde);
+    cursor: pointer;
+    background: var(--verdeclaro);
+}
+.bvd__vistas > div a {
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 15px;
+}
+.bvd__vistas img {
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+
+.bvd__restaurant .bvd__fondo_img, .bvd__admin .bvd__fondo_img {
+    width: 200px;
+    height: 200px;
+    background: var(--rosablanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bvd__restaurant .bvd__fondo_img span, .bvd__admin .bvd__fondo_img span {
+    color: var(--gris);
+    font-size: 50px;
+
+}
+.bvd__restaurant .bvd__datos_restaurant h1, .bvd__restaurant .bvd__datos_restaurant h4, .bvd__admin .bvd__datos_admin h1, .bvd__admin .bvd__datos_admin h4 {
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+
+.bvd__admin {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--azulgris);
+    width: 100%;
+    height: calc(100vh - 125px);
+    padding: 10px;
+}
+.bvd__admin > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+.bvd__admin .bvd__fondo_img  {
+    margin: auto;
+}

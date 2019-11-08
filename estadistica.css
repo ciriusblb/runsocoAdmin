@@ -1,0 +1,51 @@
+
+:root {
+  --verde: #22B56E;
+  --gris: #707070;
+  --verdeclaro: #ECF8F5;
+    --azulgris: #E5E6EB;
+    --azulblanco: #F5F6FA;
+    --rojoblanco: #EDEDED;
+    --azul: #007BFF;
+    --rojo: #DC3545;
+    --rosablanco: #FAFAFA;
+}
+main {
+    background: none;
+    display: flex;
+}
+.estadistica {
+    width: 100%;
+    display: flex;
+}
+.etd__charts {
+    width: 20%;
+    padding: 15px 30px;
+    background: var(--azulblanco);
+    border-right: 1px solid var(--azulgris);
+
+}
+.etd__filtros {
+    width: 20%;
+    padding: 15px 30px;
+    height: calc(100vh - 60px);
+    background: var(--azulblanco);
+    border-right: 1px solid var(--azulgris);
+}
+.etd__section .etd__titulo {
+    border: 1px solid var(--verde);
+    background: var(--verdeclaro);
+    color: var(--verde);
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.etd__graficos {
+    width: 60%;
+    height: calc(100vh - 60px);
+    background: #fff;
+}
+
+

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Platos</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="main_button.css">
+    <link rel="stylesheet" href="pedido.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_left">
+            <div>
+                <span id="btn__header_menu" ><i class="fas fa-bars"></i></span>
+            </div>
+            <img src="img/logo-menu/horcon.png" alt="">
+            <strong>Pizzería & Restaurant EL HORCÓN</strong>
+        </div>
+        <div class="header_right">
+            <div>
+                <span><i class="fas fa-user"></i></span>
+            </div>
+            <span>
+                J.r. Junior Tenorio Dominguez
+            </span>
+        </div>
+    </header>
+    <main>
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <li><a href=""><div><img src="img/logo-menu/house.png" alt=""></div><span>Bienvenido</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/breakfast.png" alt=""></div><span>Platillos</span></a></li>
+                <li class="sidebar__active"><a href=""><div><img src="img/logo-menu/checklist.png" alt=""></div><span>Pedidos</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/analysis.png" alt=""></div><span>Estadística</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/report.png" alt=""></div><span>Reportes</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/store.png" alt=""></div><span>Restaurant</span></a></li>
+                <li><a href=""><div><img src="img/logo-menu/logout.png" alt=""></div><span>Salir</span></a></li>
+            </ul>
+        </aside>
+        <section class="pedidos">
+            <div class="pdds__left">
+                <div class="pdds__herramientas">
+                    <div class="crud">
+                        <button class="main_button atras main__button_active"><span><i class="fas fa-arrow-left"></i></span></button>
+                        <button class="main_button editar "><span><i class="fas fa-pencil-alt"></i></span></button>
+                        <button class="main_button eliminar "><span><i class="fas fa-trash"></i></span></button>
+                    </div>
+                    <div class="filtros">
+                        <div class="buscador">
+                            <select name="" id="">
+                                <option value="">Buscar por</option>
+                                <option value="">Nombre</option>
+                                <option value="">Tipo</option>
+                                <option value="">Duración</option>
+                            </select>
+                            <input type="text" placeholder="Ingrese platillo a buscar">
+                            <div>
+                                <span><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="checkoxs">
+                            <div>
+                                <label class="container">En espera
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="container">En proceso
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pdd__datos">
+                    <div class="pdd__codigo">
+                        <h5>Código: <span>fhyasdasdkasqfdgwyuklmas</span></h5>
+                    </div>
+                    <div class="pdd__data scrollbar">
+                        <div class="pdd__pedido">
+                            <div class="pdd__box pdd__menu">
+                                <h5>Menu</h5>
+                                <div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th width="200px">Platillo</th>
+                                                <th>Prec. Und.</th>
+                                                <th>Cant.</th>
+                                                <th>Prec. Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="img/logo-menu/pizza.png" alt=""></td>
+                                                <td>Pizza linda andahuaylina con harina y tomate</td>
+                                                <td>S/. 50.00</td>
+                                                <td>1</td>
+                                                <td>S/. 50.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="img/logo-menu/pizza.png" alt=""></td>
+                                                <td>Pizza terminator grande</td>
+                                                <td>S/. 25.00</td>
+                                                <td>2</td>
+                                                <td>S/. 50.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="img/logo-menu/pizza.png" alt=""></td>
+                                                <td>Pizza linda maldonada con harina y fideos</td>
+                                                <td>S/. 5.00</td>
+                                                <td>3</td>
+                                                <td>S/. 15.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="img/logo-menu/pizza.png" alt=""></td>
+                                                <td>Pizza linda loretana con su aguita de coco, ya vuelta, di, estoy de sed</td>
+                                                <td>S/. 25.00</td>
+                                                <td>2</td>
+                                                <td>S/. 50.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pdd__box pdd__detalle_de_pago">
+                                <h5>Detalle de pago</h5>
+                                <div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Total comida</td>
+                                                <td>S/. 165.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delivery</td>
+                                                <td>S/5.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Total a pagar</strong></td>
+                                                <td><strong>S/. 170.00</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pdd__box pdd__forma_de_pago">
+                                <h5>Forma de pago</h5>
+                                <div>
+                                    Efectivo
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pdd__users">
+                            <div class="pdd__box pdd__cliente">
+                                <h5>Cliente</h5>
+                                <div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Nombre: </td>
+                                                <td>Gabriel</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apellidos: </td>
+                                                <td>García Márquez</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dirección: </td>
+                                                <td>Asentamiento Humano Alberto Fujimori, Mz. C, Lt. 5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Referencia: </td>
+                                                <td>Camino al terminal, detrás del seguro, frente a la loza deportiva de FUjimori</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Celular: </td>
+                                                <td>955719894</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Correo</td>
+                                                <td>gabrielius@gmail.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pdd__box pdd__courrier">
+                                <h5>Courrier</h5>
+                                <div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Nombre: </td>
+                                                <td>Juan Manuel</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apellidos: </td>
+                                                <td>Delgado Marcos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Domicilio: </td>
+                                                <td>Pje. Daniel Racua Nro. 555</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Celular: </td>
+                                                <td>915079067</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Correo</td>
+                                                <td>juanmanuelius@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Foto: </td>
+                                                <td><img src="img/perfil/face1.png" alt=""></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pdds__right">
+                <div class="pdd__up">
+                    <img src="img/logo-menu/proceso.jpg" alt="">
+                </div>
+                <div class="pdd__bot">
+                    <div class="pdd__mapa">
+                        <img src="img/logo-menu/place.png" alt="">       
+                    </div>
+                    <div class="pdd__box pdd__estado">
+                        <h5>Estado de delivery</h5>
+                        <div>
+                            <div class="estados">
+                               <span> En restaurante</span> <br>
+                                <span class="estado__active">En camino</span> <br>
+                                <span>Llegó</span> <br>
+                                <span>Cancelado</span> <br>
+                            </div>
+                            <div>
+                                <div class="circle">
+                                    20%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+

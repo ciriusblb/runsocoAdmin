@@ -1,0 +1,121 @@
+
+:root {
+  --verde: #22B56E;
+  --gris: #707070;
+  --verdeclaro: #ECF8F5;
+    --azulgris: #E5E6EB;
+    --azulblanco: #F5F6FA;
+    --rojoblanco: #EDEDED;
+    --azul: #007BFF;
+    --rojo: #DC3545;
+    --rosablanco: #FAFAFA;
+}
+main {
+    background: none;
+    display: flex;
+}
+.platos {
+    width: 100%;
+    display: flex;
+}
+.plts__left {
+    width: 70%;
+    height: calc(100vh - 60px);
+}
+.plts__left .plts__herramientas {
+    height: 100px;
+    display: flex;
+}
+.plts__left .plts__herramientas .filtros {
+    order: 1;
+    width: 75%;
+}
+.plts__left .plts__herramientas .filtros .buscador {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plts__left .plts__herramientas .filtros .buscador select {
+    border: none;
+    outline: 0;
+}
+.plts__left .plts__herramientas .filtros .buscador input {
+    padding: 5px 10px;
+    border: 1px solid var(--borderInput);
+    border-radius: 10px;
+    font-size: 14px;
+    outline: 0;
+    height: 30px;
+    width: 400px;
+}
+.plts__left .plts__herramientas .filtros .buscador div {
+    width: 30px;
+    height: 30px;
+    background: var(--rojoblanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--gris);
+    font-size: 14px;
+}
+.plts__left .plts__herramientas .filtros .checkoxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} 
+.plts__left .plts__herramientas .filtros .checkoxs div {
+    width: 120px;
+}
+
+
+.plts__left .plts__herramientas .crud {
+    order: 2;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.plts__left .plts__tabla {
+    height: calc(100vh - 210px);
+}
+
+.plts__left .plts__paginacion {
+    background: var(--azulblanco);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.plts__right {
+    width: 30%;
+        height: calc(100vh - 60px);
+    border-left: 1px solid var(--azulblanco);
+
+}
+.plts__right .plts__up {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--rosablanco);
+}
+.plts__right .plts__bot {
+    padding: 30px;
+    overflow: auto;
+    position: relative;
+    height: calc(100vh - 160px);
+}
+
+

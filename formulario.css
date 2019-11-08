@@ -1,0 +1,166 @@
+
+:root {
+  --gris: #707070;
+  --borderInput: #EDEDED;
+  --verde: #22B56E;
+  --verdeclaro: #ECF8F5;
+    --grisclaro: #EDEDED;
+
+}
+
+
+.formulario span {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--gris);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulario__section {
+    display: flex;
+    justify-content: space-between;
+}
+.formulario__section .form__50 {
+    width: 49%;
+}
+
+
+
+
+.formulario .formulario__img {
+    position: relative;
+    margin-top: 10px;
+}
+.formulario .formulario__img .form__noImg {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 5px 10px;
+    background: var(--grisclaro);
+    margin-top: 10px;
+    margin: auto;
+}
+.formulario .formulario__img .form__noImg div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+}
+.formulario .formulario__img .form__noImg span {
+    font-size: 70px;
+} 
+.formulario .formulario__img .form__noImg input {
+    display: none;
+}
+
+.formulario .formulario__img .form__siImg {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background: var(--grisclaro);
+    margin-top: 10px;
+    margin: auto;
+}
+.formulario .formulario__img .form__siImg img {
+    width: 100%;
+    background: var(--grisclaro);
+    margin-top: 10px;
+    margin: auto;
+}
+.formulario .formulario__img .form__siImg input {
+    display: none;
+}
+
+.formulario .formulario__input {
+    position: relative;
+    margin-top: 10px;
+}
+.formulario .formulario__input input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid var(--borderInput);
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--gris);
+    outline: 0;
+}
+.formulario .formulario__input input:focus {
+        border: 0.5px solid var(--verde);
+}
+
+.formulario .formulario__textarea {
+    position: relative;
+    margin-top: 10px;
+}
+.formulario .formulario__textarea textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid var(--borderInput);
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--gris);
+    outline: 0;
+}
+.formulario .formulario__textarea textarea:focus {
+        border: 0.5px solid var(--verde);
+}
+
+.formulario .formulario__select {
+    position: relative;
+    margin-top: 10px;
+}
+.formulario .formulario__select select {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid var(--borderInput);
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--gris);
+    outline: 0;
+}
+.formulario .formulario__select select:focus {
+        border: 0.5px solid var(--verde);
+}
+
+
+
+
+
+
+.formulario .formulario__botones {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario .formulario__botones button {
+    width: 120px;
+    padding: 7px 0;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.formulario .formulario__botones .boton__send button {
+    border: 2px solid var(--verde);
+    background: var(--verdeclaro);
+    color: var(--verde);
+}
+.formulario .formulario__botones .boton__send button:hover {
+    cursor: pointer;
+    background: var(--verde);
+    color: #fff;
+}
+.formulario .formulario__botones .boton__cancel button {
+    border: 2px solid var(--gris);
+    background: var(--grisclaro);
+    color: var(--gris);
+}
+.formulario .formulario__botones .boton__cancel button:hover {
+    cursor: pointer;
+    background: var(--gris);
+    color: #fff;
+}
